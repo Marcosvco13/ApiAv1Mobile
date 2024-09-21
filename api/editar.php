@@ -5,7 +5,7 @@ $autor=$_POST['autor'];
 $editora=$_POST['editora'];
 $lido=$_POST['lido'];
 
-$conexao = mysqli_connect(hostname: '34.28.254.100',username: 'root',password: 'usbw');
+$conexao = mysqli_connect(hostname: '34.28.254.100',username: 'admin',password: 'usbw');
 mysqli_select_db(mysql: $conexao, database: 'biblioteca');
 $sql = "update livros set NomeLivro='$nomenovo', Autor='$autor', Editora='$editora', Lido='$lido' where NomeLivro='$nomevelho'";
 

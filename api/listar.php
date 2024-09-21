@@ -1,5 +1,5 @@
 <?php
-    $conexao = mysqli_connect(hostname: '34.28.254.100',username: 'root',password: 'usbw');
+    $conexao = mysqli_connect(hostname: '34.28.254.100',username: 'admin',password: 'usbw');
     mysqli_select_db(mysql: $conexao, database: 'biblioteca');
     $sql="select * from livros";
 
